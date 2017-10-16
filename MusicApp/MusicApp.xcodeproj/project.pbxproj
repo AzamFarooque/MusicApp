@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3055D6C1F91FA0500C40F00 /* SaReGa_SaReGaMa_2b.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3055D6B1F91FA0500C40F00 /* SaReGa_SaReGaMa_2b.wav */; };
+		A347A24B1F91D6F600249F8D /* RiyazLessonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347A24A1F91D6F600249F8D /* RiyazLessonCollectionViewCell.swift */; };
+		A347A29B1F91D77600249F8D /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347A2981F91D77600249F8D /* StoryboardIdentifiable.swift */; };
+		A347A29C1F91D77600249F8D /* UIStoryboard+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347A2991F91D77600249F8D /* UIStoryboard+Storyboards.swift */; };
+		A347A29D1F91D77600249F8D /* UIViewController+StoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347A29A1F91D77600249F8D /* UIViewController+StoryboardIdentifier.swift */; };
+		A347A2A01F91D8CB00249F8D /* RiyazSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347A29F1F91D8CB00249F8D /* RiyazSongViewController.swift */; };
 		A35D611D1F911CD7004D9F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D611C1F911CD7004D9F50 /* AppDelegate.swift */; };
 		A35D611F1F911CD7004D9F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35D611E1F911CD7004D9F50 /* ViewController.swift */; };
 		A35D61221F911CD7004D9F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35D61201F911CD7004D9F50 /* Main.storyboard */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3055D6B1F91FA0500C40F00 /* SaReGa_SaReGaMa_2b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SaReGa_SaReGaMa_2b.wav; sourceTree = "<group>"; };
+		A347A24A1F91D6F600249F8D /* RiyazLessonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiyazLessonCollectionViewCell.swift; sourceTree = "<group>"; };
+		A347A2981F91D77600249F8D /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		A347A2991F91D77600249F8D /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
+		A347A29A1F91D77600249F8D /* UIViewController+StoryboardIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardIdentifier.swift"; sourceTree = "<group>"; };
+		A347A29F1F91D8CB00249F8D /* RiyazSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiyazSongViewController.swift; sourceTree = "<group>"; };
 		A35D61191F911CD7004D9F50 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35D611C1F911CD7004D9F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A35D611E1F911CD7004D9F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A347A29E1F91D77A00249F8D /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A347A2981F91D77600249F8D /* StoryboardIdentifiable.swift */,
+				A347A2991F91D77600249F8D /* UIStoryboard+Storyboards.swift */,
+				A347A29A1F91D77600249F8D /* UIViewController+StoryboardIdentifier.swift */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
 		A35D61101F911CD7004D9F50 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +121,12 @@
 		A35D611B1F911CD7004D9F50 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				A3055D6B1F91FA0500C40F00 /* SaReGa_SaReGaMa_2b.wav */,
+				A347A29F1F91D8CB00249F8D /* RiyazSongViewController.swift */,
+				A347A29E1F91D77A00249F8D /* StoryBoard */,
 				A35D611C1F911CD7004D9F50 /* AppDelegate.swift */,
 				A35D611E1F911CD7004D9F50 /* ViewController.swift */,
+				A347A24A1F91D6F600249F8D /* RiyazLessonCollectionViewCell.swift */,
 				A35D61201F911CD7004D9F50 /* Main.storyboard */,
 				A35D61261F911CD7004D9F50 /* Assets.xcassets */,
 				A35D61281F911CD7004D9F50 /* LaunchScreen.storyboard */,
@@ -235,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3055D6C1F91FA0500C40F00 /* SaReGa_SaReGaMa_2b.wav in Resources */,
 				A35D612A1F911CD7004D9F50 /* LaunchScreen.storyboard in Resources */,
 				A35D61271F911CD7004D9F50 /* Assets.xcassets in Resources */,
 				A35D61221F911CD7004D9F50 /* Main.storyboard in Resources */,
@@ -262,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A347A24B1F91D6F600249F8D /* RiyazLessonCollectionViewCell.swift in Sources */,
 				A35D611F1F911CD7004D9F50 /* ViewController.swift in Sources */,
 				A35D611D1F911CD7004D9F50 /* AppDelegate.swift in Sources */,
+				A347A29D1F91D77600249F8D /* UIViewController+StoryboardIdentifier.swift in Sources */,
 				A35D61251F911CD7004D9F50 /* MusicApp.xcdatamodeld in Sources */,
+				A347A2A01F91D8CB00249F8D /* RiyazSongViewController.swift in Sources */,
+				A347A29B1F91D77600249F8D /* StoryboardIdentifiable.swift in Sources */,
+				A347A29C1F91D77600249F8D /* UIStoryboard+Storyboards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
