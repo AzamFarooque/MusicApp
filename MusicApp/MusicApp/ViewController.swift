@@ -35,7 +35,13 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RiyazLessonCollectionViewCell", for: indexPath as IndexPath) as! RiyazLessonCollectionViewCell
         
-        cell.songLabel.text = "Sa"
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOpacity = 1
+        cell.layer.masksToBounds = false
+        cell.layer.shadowOffset = CGSize.zero
+
+        
+        cell.songLabel.text = "SaReGa_SaReGa"
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -44,6 +50,10 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         self.navigationController?.pushViewController(subsectionVC, animated: true)
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    
+        return UIEdgeInsetsMake(10, 10, 10, 10)
+    }
     
 
     override func didReceiveMemoryWarning() {
