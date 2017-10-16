@@ -88,6 +88,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A322675D1F9523FB0055E4AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3055D6B1F91FA0500C40F00 /* SaReGa_SaReGaMa_2b.wav */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A322675E1F95240A0055E4AD /* SongsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A347A29F1F91D8CB00249F8D /* RiyazSongViewController.swift */,
+			);
+			name = SongsViewController;
+			sourceTree = "<group>";
+		};
+		A322675F1F95242D0055E4AD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A35D611C1F911CD7004D9F50 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A32267601F95243E0055E4AD /* LessonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A35D611E1F911CD7004D9F50 /* ViewController.swift */,
+				A32267611F9524510055E4AD /* LessCell */,
+			);
+			name = LessonViewController;
+			sourceTree = "<group>";
+		};
+		A32267611F9524510055E4AD /* LessCell */ = {
+			isa = PBXGroup;
+			children = (
+				A347A24A1F91D6F600249F8D /* RiyazLessonCollectionViewCell.swift */,
+			);
+			name = LessCell;
+			sourceTree = "<group>";
+		};
 		A347A29E1F91D77A00249F8D /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,12 +162,11 @@
 		A35D611B1F911CD7004D9F50 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
-				A3055D6B1F91FA0500C40F00 /* SaReGa_SaReGaMa_2b.wav */,
-				A347A29F1F91D8CB00249F8D /* RiyazSongViewController.swift */,
+				A32267601F95243E0055E4AD /* LessonViewController */,
+				A322675F1F95242D0055E4AD /* AppDelegate */,
+				A322675E1F95240A0055E4AD /* SongsViewController */,
+				A322675D1F9523FB0055E4AD /* Resources */,
 				A347A29E1F91D77A00249F8D /* StoryBoard */,
-				A35D611C1F911CD7004D9F50 /* AppDelegate.swift */,
-				A35D611E1F911CD7004D9F50 /* ViewController.swift */,
-				A347A24A1F91D6F600249F8D /* RiyazLessonCollectionViewCell.swift */,
 				A35D61201F911CD7004D9F50 /* Main.storyboard */,
 				A35D61261F911CD7004D9F50 /* Assets.xcassets */,
 				A35D61281F911CD7004D9F50 /* LaunchScreen.storyboard */,

@@ -26,7 +26,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     // Pragma Mark : - CollectionView Deleagtes
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     private func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1

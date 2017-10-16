@@ -80,10 +80,17 @@ class RiyazSongViewController: UIViewController {
                 view.frame = CGRect(x:  600 ,y : self.view.frame.size.height/2 + 120 , width : 100 , height : 10)
             }
             if index == 3{
-                view.frame = CGRect(x:  7400 ,y : self.view.frame.size.height/2 + 120 , width : 100 , height : 10)
+                view.frame = CGRect(x:  7300 ,y : self.view.frame.size.height/2 + 120 , width : 100 , height : 10)
             }
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.red
+            
+            let lable = UILabel()
+            lable.text = "S"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
             scrollView.addSubview(view)
             
             
@@ -115,6 +122,14 @@ class RiyazSongViewController: UIViewController {
             
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.orange
+            
+            let lable = UILabel()
+            lable.text = "R"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
+
             scrollView.addSubview(view)
         }
         
@@ -157,6 +172,15 @@ class RiyazSongViewController: UIViewController {
             }
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.black
+            
+            let lable = UILabel()
+            lable.text = "G"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
+
+            
             scrollView.addSubview(view)
         }
         
@@ -210,6 +234,14 @@ class RiyazSongViewController: UIViewController {
             
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.blue
+            
+            let lable = UILabel()
+            lable.text = "M"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
+
             scrollView.addSubview(view)
         }
         
@@ -262,6 +294,15 @@ class RiyazSongViewController: UIViewController {
             }
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.green
+            
+            let lable = UILabel()
+            lable.text = "P"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
+
+            
             scrollView.addSubview(view)
         }
         
@@ -305,6 +346,15 @@ class RiyazSongViewController: UIViewController {
             }
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.purple
+            
+            let lable = UILabel()
+            lable.text = "D"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
+
+            
             scrollView.addSubview(view)
         }
         
@@ -335,6 +385,15 @@ class RiyazSongViewController: UIViewController {
             
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.brown
+            
+            let lable = UILabel()
+            lable.text = "N"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
+
+            
             scrollView.addSubview(view)
         }
         
@@ -348,10 +407,18 @@ class RiyazSongViewController: UIViewController {
                 view.frame = CGRect(x:  3900 ,y : self.view.frame.size.height/2 - 150 , width : 100 , height : 10)
             }
             if index == 3{
-                view.frame = CGRect(x:  4200 ,y : self.view.frame.size.height/2 - 150 , width : 200 , height : 10)
+                view.frame = CGRect(x:  4200 ,y : self.view.frame.size.height/2 - 150 , width : 100 , height : 10)
             }
             view.layer.cornerRadius = 5
             view.backgroundColor = UIColor.yellow
+            
+            let lable = UILabel()
+            lable.text = "S'"
+            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            lable.font = UIFont.boldSystemFont(ofSize: 12)
+            lable.textColor = UIColor.black
+            view.addSubview(lable)
+
             scrollView.addSubview(view)
             
             
