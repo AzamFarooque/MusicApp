@@ -55,8 +55,20 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         return UIEdgeInsetsMake(10, 10, 10, 10)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        if self.view.frame.size.width == 568{
+            return CGSize(width: 200, height: 250)
+        }
+        
+        return CGSize(width: 292, height: 285)
+        
 
-    override func didReceiveMemoryWarning() {
+        
+    }
+
+    
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
