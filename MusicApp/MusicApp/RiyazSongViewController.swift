@@ -52,7 +52,7 @@ class RiyazSongViewController: UIViewController {
     UIView.animate(withDuration: 73, delay: 4.0, options: .curveLinear, animations: {
     self.scrollView.contentOffset = CGPoint(x: 7300 , y : 0)
     })
-        
+    
 }
     // MARK :- Back Button Function
     
@@ -368,7 +368,12 @@ class RiyazSongViewController: UIViewController {
             view.backgroundColor = UIColor.yellow
             let lable = UILabel()
             lable.text = "S'"
-            lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            if self.view.frame.size.width == 568{
+            lable.frame = CGRect(x: 0 , y: -15 , width : 100 , height : 20)
+            }
+            else{
+               lable.frame = CGRect(x: 0 , y: -20 , width : 100 , height : 20)
+            }
             lable.font = UIFont.boldSystemFont(ofSize: 12)
             lable.textColor = UIColor.black
             view.addSubview(lable)
