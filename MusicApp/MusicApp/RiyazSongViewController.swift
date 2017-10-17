@@ -100,7 +100,7 @@ class RiyazSongViewController: UIViewController {
         }
         for index in 1...7{
             let view = UIView()
-            view.frame.origin.y = self.view.frame.size.height/2 + 80
+            view.frame.origin.y = self.view.frame.size.height/2 + 79
             view.frame.size.width = 100
             view.frame.size.height = 10
             switch index {
@@ -133,7 +133,7 @@ class RiyazSongViewController: UIViewController {
         }
         for index in 1...11{
             let view = UIView()
-            view.frame.origin.y = self.view.frame.size.height/2 + 40
+            view.frame.origin.y = self.view.frame.size.height/2 + 39
             view.frame.size.width = 100
             view.frame.size.height = 10
             switch index {
@@ -175,7 +175,7 @@ class RiyazSongViewController: UIViewController {
         
         for index in 1...14{
             let view = UIView()
-            view.frame.origin.y = self.view.frame.size.height/2
+            view.frame.origin.y = self.view.frame.size.height/2 - 2
             view.frame.size.width = 100
             view.frame.size.height = 10
             switch index {
@@ -223,7 +223,7 @@ class RiyazSongViewController: UIViewController {
         
         for index in 1...14{
             let view = UIView()
-            view.frame.origin.y = self.view.frame.size.height/2 - 40
+            view.frame.origin.y = self.view.frame.size.height/2 - 36
             view.frame.size.width = 100
             view.frame.size.height = 10
             switch index {
@@ -272,7 +272,7 @@ class RiyazSongViewController: UIViewController {
         
         for index in 1...11{
             let view = UIView()
-            view.frame.origin.y = self.view.frame.size.height/2 - 80
+            view.frame.origin.y = self.view.frame.size.height/2 - 76
             view.frame.size.width = 100
             view.frame.size.height = 10
             switch index {
@@ -314,7 +314,7 @@ class RiyazSongViewController: UIViewController {
         
         for index in 1...7{
             let view = UIView()
-            view.frame.origin.y = self.view.frame.size.height/2 - 120
+            view.frame.origin.y = self.view.frame.size.height/2 - 116
             view.frame.size.width = 100
             view.frame.size.height = 10
             switch index {
@@ -349,7 +349,7 @@ class RiyazSongViewController: UIViewController {
         
         for index in 1...3{
             let view = UIView()
-            view.frame.origin.y = self.view.frame.size.height/2 - 150
+            view.frame.origin.y = self.view.frame.size.height/2 - 148
             view.frame.size.height = 10
             switch index {
             case 1:
