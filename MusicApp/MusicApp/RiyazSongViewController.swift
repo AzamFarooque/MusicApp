@@ -17,9 +17,7 @@ class RiyazSongViewController: UIViewController {
     var duration : Double!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    scrollView.contentSize = CGSize(width : 7400 , height : self.view.frame.size.height - 50)
-    songNote()
+        songNote()
     Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(RiyazSongViewController.playSong), userInfo: nil, repeats: false)
     self.navigationController?.navigationBar.isHidden = true
     }
@@ -53,8 +51,9 @@ class RiyazSongViewController: UIViewController {
     // MARK :- Songnote Animation Function
     
     func noteAnimation(){
-    UIView.animate(withDuration: duration, delay: 1.0, options: .curveLinear, animations: {
-    self.scrollView.contentOffset = CGPoint(x: self.duration*100 , y : 0)
+    UIView.animate(withDuration: duration - 2 , delay: 1.0, options: .curveLinear, animations: {
+    self.scrollView.contentOffset = CGPoint(x: self.duration*100 - 200, y : 0)
+       
     })
     
 }
