@@ -14,14 +14,14 @@ class RiyazSongViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     var player : AVAudioPlayer!
     var timer : Timer!
+    var duration : Double!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    scrollView.contentSize = CGSize(width : 7700 , height : self.view.frame.size.height - 50)
+    scrollView.contentSize = CGSize(width : 7400 , height : self.view.frame.size.height - 50)
     songNote()
     Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(RiyazSongViewController.playSong), userInfo: nil, repeats: false)
-        self.navigationController?.navigationBar.isHidden = true
-        timer =   Timer.scheduledTimer(timeInterval: 0.0, target: self, selector: #selector(RiyazSongViewController.noteAnimation), userInfo: nil, repeats: false)
+    self.navigationController?.navigationBar.isHidden = true
     }
     
     // MARK :- Stop Function
@@ -40,7 +40,11 @@ class RiyazSongViewController: UIViewController {
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
+            let time = Bundle.main.path(forResource: "SaReGa_SaReGaMa_2b", ofType: "wav")
+            let asset = AVURLAsset.init(url: URL(fileURLWithPath: time!))
+            duration = asset.duration.seconds
             player.play()
+            noteAnimation()
         } catch let error {
             print(error.localizedDescription)
         }
@@ -49,8 +53,8 @@ class RiyazSongViewController: UIViewController {
     // MARK :- Songnote Animation Function
     
     func noteAnimation(){
-    UIView.animate(withDuration: 73, delay: 4.0, options: .curveLinear, animations: {
-    self.scrollView.contentOffset = CGPoint(x: 7300 , y : 0)
+    UIView.animate(withDuration: duration, delay: 1.0, options: .curveLinear, animations: {
+    self.scrollView.contentOffset = CGPoint(x: self.duration*100 , y : 0)
     })
     
 }
