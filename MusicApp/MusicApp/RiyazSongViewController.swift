@@ -51,10 +51,10 @@ class RiyazSongViewController: UIViewController {
     // MARK :- Songnote Animation Function
     
     func noteAnimation(){
-    UIView.animate(withDuration: duration - 2 , delay: 1.0, options: .curveLinear, animations: {
-    self.scrollView.contentOffset = CGPoint(x: self.duration*100 - 200, y : 0)
+    UIView.animate(withDuration: duration - 1.5 , delay: 1.0, options: .curveLinear, animations: {
+    self.scrollView.contentOffset = CGPoint(x: self.duration*100 - 150, y : 0)
        
-    })
+       })
     
 }
     // MARK :- Back Button Function
@@ -79,14 +79,16 @@ class RiyazSongViewController: UIViewController {
     for index in 1...3{
             let view = UIView()
             view.frame.origin.y = self.view.frame.size.height/2 + 120
-            view.frame.size.width = 100
             view.frame.size.height = 10
             switch index {
             case 1:
+            view.frame.size.width = 100
             view.frame.origin.x = 300
             case 2:
+            view.frame.size.width = 100
             view.frame.origin.x = 600
             case 3:
+            view.frame.size.width = 150
             view.frame.origin.x = 7300
             default:
                 break
